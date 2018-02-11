@@ -1,0 +1,6 @@
+[Unit]
+Description=record GPS Data
+After=gpsd.socket
+
+[Service]
+ExecStart=/usr/bin/python /home/pi/GPS/recordgps.py
